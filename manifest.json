@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "fix-twitter-copy",
+  "version": "1.0",
+  "description": "Rewrites copied Twitter/X links to fxtwitter or vxtwitter",
+  "permissions": ["clipboardWrite"],
+  "host_permissions": ["*://twitter.com/*", "*://x.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/*", "*://x.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "fix-twitter-copy@local"
+    }
+  }
+}
