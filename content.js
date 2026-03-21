@@ -1,7 +1,7 @@
 function rewrite(url) {
   return url
-    .replace(/^https?:\/\/(www\.)?x\.com\//, "https://fxtwitter.com/")
-    .replace(/^https?:\/\/(www\.)?twitter\.com\//, "https://fxtwitter.com/");
+    .replace(/^https?:\/\/(www\.)?x\.com\//, "https://vxtwitter.com/")
+    .replace(/^https?:\/\/(www\.)?twitter\.com\//, "https://vxtwitter.com/");
 }
 
 document.addEventListener("copy", (event) => {
